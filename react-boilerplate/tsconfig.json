@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "allowJs": true, // Permite compilar arquivos JavaScript
+    "outDir": "./dist" // Diretório de saída para os arquivos compilados
+  },
+  "include": ["src"]
+}
