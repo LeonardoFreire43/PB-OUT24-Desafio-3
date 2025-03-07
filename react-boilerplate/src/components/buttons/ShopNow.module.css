@@ -1,0 +1,37 @@
+.shopNow {
+    position: absolute;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    top: -5px;
+}
+
+.shopNow:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.shopNowParent {
+    width: 14%;
+    position: relative;
+    border-radius: 62px;
+    background-color: #000;
+    height: 52px;
+    top: 340px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 54px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    left: calc(50% - 646px);
+    font-family: Satoshi;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}

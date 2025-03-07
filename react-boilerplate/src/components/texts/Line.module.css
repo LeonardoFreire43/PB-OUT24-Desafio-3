@@ -1,0 +1,19 @@
+.lineDiv {
+    height: 10%; /* Ou defina um valor específico */
+    width: auto; /* Espessura da linha */
+    position: absolute;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    left: calc(50% - 540px);
+    top: 625px;
+}
+
+.lineDiv1 {
+    height: 10%; /* Ou defina um valor específico */
+    width: auto; /* Espessura da linha */
+    position: absolute;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    left: calc(50% - 375px);
+    top: 625px;
+}

@@ -1,0 +1,30 @@
+.a {
+    position: absolute;
+    font-size: 40px;
+    font-family: Satoshi;
+    color: #000;
+    top: 650px;
+    text-align: left;
+    left: calc(50% - 656px);
+}
+
+.b {
+    position: absolute;
+    font-size: 40px;
+    font-family: Satoshi;
+    color: #000;
+    top: 650px;
+    left: calc(50% - 520px);
+    text-align: left;
+}
+
+.c {
+    position:  absolute;
+    font-size: 40px;
+    font-family: Satoshi;
+    color: #000;
+    top: 650px;
+    left: calc(50% - 364px);
+    text-align: left;
+}
+

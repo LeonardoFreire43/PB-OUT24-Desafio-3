@@ -1,0 +1,14 @@
+.findClothesThat {
+    width: 577px;
+    position: relative;
+    font-size: 64px;
+    line-height: 64px;
+    display: flex;
+    font-family: 'Integral CF';
+    color: #000;
+    text-align: left;
+    align-items: center;
+    top: 260px;
+    left: calc(50% - 646px);
+}
+

@@ -1,0 +1,51 @@
+.signUpNow {
+    position: relative;
+    text-decoration: underline;
+    left: calc(50% - 156px);
+    font-family: Satoshi;
+    color: #fff;
+}
+
+.signUpNow:hover {
+    color: rgb(107, 107, 132);
+}
+
+.signUpAndContainer {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 176px);
+    display: flex;
+    transition: opacity 0.5s ease-out;
+}
+
+.signUpAndContainer.hidden {
+    opacity: 0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.frameIcon {
+    position: absolute;
+    top: 8px;
+    right: calc(50% - 756px);
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.signUpAndGet20OffToYouParent {
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    height: 38px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    font-family: Satoshi;
+    transition: opacity 0.5s ease-out;
+}

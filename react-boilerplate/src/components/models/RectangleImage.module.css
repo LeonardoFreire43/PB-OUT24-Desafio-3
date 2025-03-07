@@ -1,0 +1,9 @@
+.rectangleIcon {
+    width: 100%;
+    position: absolute;
+    max-width: 100%;
+    top: 120px;
+    height: 100%;
+    object-fit: cover;
+}
+

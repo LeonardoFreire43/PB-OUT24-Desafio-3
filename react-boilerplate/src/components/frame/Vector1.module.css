@@ -1,0 +1,9 @@
+.vectorIcon1 {
+    width: 100%;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    height: 104px;
+    left: calc(50% - 156px);
+}
+

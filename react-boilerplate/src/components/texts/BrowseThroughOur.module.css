@@ -1,0 +1,13 @@
+.browseThroughOur {
+    width: 545px;
+    position: absolute;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Satoshi;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    top: 465px;
+    left: calc(50% - 646px);
+    display: inline-block;
+}
+
