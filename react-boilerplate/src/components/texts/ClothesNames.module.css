@@ -1,0 +1,123 @@
+.shirt {
+    text-transform: lowercase;
+}
+.tShirtWithTapeContainer {
+    width: 225px;
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    top: 1750px;
+    left: calc(50% - 600px);
+    text-align: left;
+}
+
+.kinny {
+    text-transform: lowercase;
+}
+.skinnyFitJeansContainer {
+    width: 150px;
+    left: calc(50% - 256px);
+    position: absolute;
+    font-size: 20px;
+    top: 1750px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.heckered {
+    text-transform: lowercase;
+}
+.checkeredShirt {
+    width: 151px;
+    top: 1750px;
+    right: calc(50% - 205px);
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.leeve {
+    text-transform: lowercase;
+}
+.sleeveStripedTShirtContainer {
+    width: 199px;
+    position: absolute;
+    right: calc(50% - 600px);
+    top: 1750px;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+.ertical {
+    text-transform: lowercase;
+}
+.verticalStripedShirtContainer {
+    width: 194px;
+    position: absolute;
+    font-size: 20px;
+    left: calc(50% - 600px);
+    top: 2515px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+.ourage {
+    text-transform: lowercase;
+
+}
+.courageGraphicTShirtContainer {
+    width: 226px;
+    top: 2515px;
+    position: absolute;
+    font-size: 20px;
+    left: calc(50% - 255px);
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.oose {
+    text-transform: lowercase;
+
+}
+.looseFitBermudaContainer {
+    width: 239px;
+    top: 2515px;
+    position: absolute;
+    right: calc(50% - 342px);
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.aded {
+    text-transform: lowercase;
+}
+.fadedSkinnyJeansContainer {
+    width: 185px;
+    position: absolute;
+    font-size: 20px;
+    top: 2515px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    right: calc(50% - 635px);
+    text-align: left;
+}
+
+
+
+

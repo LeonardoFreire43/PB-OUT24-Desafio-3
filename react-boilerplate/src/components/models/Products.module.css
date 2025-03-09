@@ -1,0 +1,52 @@
+.newArrivals {
+    width: 403px;
+    position: absolute;
+    font-size: 48px;
+    display: inline-block;
+    font-family: 'Integral CF';
+    color: #000;
+    text-align: center;
+    top: 1300px;
+    left: calc(50% - 140px);
+}
+
+.topSelling {
+    width: 346px;
+    position: absolute;
+    font-size: 48px;
+    display: inline-block;
+    font-family: 'Integral CF';
+    color: #000;
+    top: 2070px;
+    text-align: center;
+    left: calc(50% - 125px);
+
+}
+
+.browseByDress {
+    width: 687px;
+    position: absolute;
+    font-size: 48px;
+    display: inline-block;
+    font-family: 'Integral CF';
+    color: #000;
+    text-align: center;
+    left: calc(50% - 310px);
+    top: 2880px;
+    z-index: 2;
+}
+
+.ourHappyCustomers{
+    width: auto;
+    position: absolute;
+    font-size: 48px;
+    display: inline-block;
+    font-family: 'Integral CF';
+    color: #000;
+    top: 3750px;
+    text-align: center;
+    left: calc(50% - 580px);
+
+}
+
+

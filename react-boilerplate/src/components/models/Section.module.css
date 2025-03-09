@@ -1,0 +1,98 @@
+.image11Icon {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.label {
+    position: absolute;
+    top: 25px;
+    left: 36px;
+}
+.image11Parent {
+    position: absolute;
+    top: 192px;
+    left: 64px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 407px;
+    height: 289px;
+    overflow: hidden;
+}
+.image14Icon {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.image14Parent {
+    position: absolute;
+    top: 501px;
+    left: 768px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 407px;
+    height: 289px;
+    overflow: hidden;
+}
+.image13Icon {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.image13Parent {
+    position: absolute;
+    top: 192px;
+    left: 491px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 684px;
+    height: 289px;
+    overflow: hidden;
+}
+.image12Icon {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.image12Parent {
+    position: absolute;
+    top: 501px;
+    left: 64px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 684px;
+    height: 289px;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 2800px;
+    left: calc(50% - 580px);
+    border-radius: 40px;
+    background-color: #f0f0f0;
+    width: 1239px;
+    height: 866px;
+    overflow: hidden;
+    font-size: 36px;
+}
+
+.image11Parent,
+.image12Parent,
+.image13Parent,
+.image14Parent {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image11Parent:hover,
+.image12Parent:hover,
+.image13Parent:hover,
+.image14Parent:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+

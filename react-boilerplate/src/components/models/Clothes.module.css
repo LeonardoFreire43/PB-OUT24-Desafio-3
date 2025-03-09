@@ -1,0 +1,118 @@
+.span {
+    color: rgba(0, 0, 0, 0.6);
+}
+.frameParent1 {
+    position: absolute;
+    top: 1780px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    left: calc(50% - 600px);
+    font-size: 14px;
+}
+.frameParent2 {
+    position: absolute;
+    top: 1780px;
+    left: 415px;
+    display: flex;
+    flex-direction: row;
+    left: calc(50% - 256px);
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    font-size: 14px;
+}
+.frameParent3 {
+    position: absolute;
+    top: 1780px;
+    right: calc(50% - 180px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    font-size: 14px;
+}
+.frameParent4 {
+    position: absolute;
+    top: 1780px;
+    right: calc(50% - 525px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    font-size: 14px;
+}
+.image7Icon {
+    width: auto;
+    position: absolute;
+    top: 1430px;
+    max-width: 100%;
+    left: calc(50% - 600px);
+    overflow: hidden;
+    height: 300px;
+    object-fit: cover;
+}
+    
+.image8Icon {
+    position: absolute;
+    top: 1430px;
+    left: calc(50% - 255px);
+    width: 268px;
+    height: 300px;
+    object-fit: cover;
+}
+.image8Parent {
+    width: auto;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #f0eeed;
+    height: 300px;
+    overflow: hidden;
+}
+    
+.image9Icon {
+    width: auto;
+    position: absolute;
+    top: 1430px;
+    right: calc(50% - 355px);
+    max-width: 100%;
+    overflow: hidden;
+    height: 300px;
+    object-fit: cover;
+}
+    
+.image10Icon {
+    width: auto;
+    top: 1430px;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    right: calc(50% - 700px);
+    height: 300px;
+    object-fit: cover;
+}
+
+.image7Icon,
+.image8Icon,
+.image9Icon,
+.image10Icon {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.image7Icon:hover,
+.image8Icon:hover,
+.image9Icon:hover,
+.image10Icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3)
+}
+
+    
+    

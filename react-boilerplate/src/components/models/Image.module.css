@@ -1,0 +1,45 @@
+.image7Icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    object-fit: cover;
+}
+
+.image8Icon {
+    position: absolute;
+    top: -51px;
+    left: 14px;
+    width: 268px;
+    height: 402px;
+    object-fit: cover;
+}
+.image8Parent {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    background-color: #f0eeed;
+    height: 298px;
+    overflow: hidden;
+}
+
+.image9Icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    object-fit: cover;
+}
+
+.image10Icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    object-fit: cover;
+}
+
+
