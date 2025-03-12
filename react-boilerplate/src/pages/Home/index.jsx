@@ -17,12 +17,12 @@ import Clothes from '../../components/models/Clothes';
 import ClothesNames from '../../components/texts/ClothesNames';
 import ViewAll from '../../components/buttons/ViewAll';
 import Clothes2 from '../../components/texts/Clothes2';
-import Section from '../../components/models/Section'
-import Carrossel from '../../components/models/Carrossel'
-import Email from '../../components/frame/Email'
+import Section from '../../components/models/Section';
+import Carrossel from '../../components/models/Carrossel';
+import Email from '../../components/frame/Email';
 import Rectangle2 from '../../components/frame/Rectangle2';
-import Rodape from '../../components/texts/Rodape'
-import Price from '../../components/texts/Prices'
+import Rodape from '../../components/texts/Rodape';
+import Price from '../../components/texts/Prices';
 
 
 function Home() {

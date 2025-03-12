@@ -1,0 +1,41 @@
+.lineDiv {
+    width: 30%;
+    position: absolute;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    top: 500px;
+    left: calc(50% - -215px);
+    height: 1px;
+}
+
+.lineDiv1 {
+    width: 30%;
+    position: absolute;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    top: 615px;
+    left: calc(50% - -215px);
+    height: 1px;
+}
+
+.lineDiv2 {
+    width: 30%;
+    position: absolute;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    top: 750px;
+    left: calc(50% - -215px);
+    height: 1px;
+}
+
+.lineDiv3 {
+    width: 68%;
+    position: absolute;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    top: 120px;
+    left: calc(50% - 640px);
+    height: 1px;
+}
+
+

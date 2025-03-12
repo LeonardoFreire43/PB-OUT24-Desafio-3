@@ -1,0 +1,197 @@
+.small {
+    position: relative;
+}
+.smallWrapper {
+    border-radius: 62px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+}
+.large {
+    position: relative;
+    font-weight: 500;
+}
+.largeWrapper {
+    border-radius: 62px;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    color: #fff;
+}
+.frameParent {
+    position: absolute;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: left;
+    top: 670px;
+    right: calc(50% - 780px);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Satoshi;
+}
+
+.chooseSize {
+    width: 87px;
+    position: absolute;
+    font-size: 16px;
+    left: calc(50% - -215px);
+    top: 640px;
+    font-family: Satoshi;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    display: inline-block;
+}
+
+.frameIcon25 {
+    width: auto;
+    position: relative;
+    height: auto;
+    top: -5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.frameParent1 {
+    width: 10%;
+    position: absolute;
+    border-radius: 62px;
+    background-color: #f0f0f0;
+    height: 52px;
+    top: 770px;
+    left: calc(50% - -210px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    gap: 0px;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: Satoshi;
+}
+
+.addToCart {
+    position: relative;
+    font-weight: 500;
+}
+.addToCartParent {
+    width: 20%;
+    position: absolute;
+    border-radius: 62px;
+    background-color: #000;
+    height: 52px;
+    top: 770px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: calc(50% - -405px);
+    padding: 16px 54px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Satoshi;
+}
+
+.sizeButton {
+    border-radius: 62px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: Satoshi;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.sizeButton:hover {
+    transform: scale(1.05);
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.frameIcon25 {
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.frameIcon25:active {
+    transform: scale(0.9);
+}
+
+.addToCartParent {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.addToCartParent:hover {
+    transform: scale(1.05);
+}
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popupContainer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popupCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .popupMessage {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+

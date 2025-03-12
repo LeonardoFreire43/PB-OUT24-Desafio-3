@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from 'react';
+import { Link } from 'react-router-dom';  // Importe o Link
 import styles from './Nav.module.css';
 import React from 'react';
 
@@ -30,8 +31,10 @@ const Nav: FunctionComponent = () => {
       <b className={styles.shopco}>SHOP.CO</b>
       <div className={styles.frameParent}>
         <div className={styles.shopParent}>
-          <a href="#" className={styles.shop}>Shop</a>
-          <img className={styles.frameIcon} alt="" src="Frame.svg" />
+          <Link to="/products" className={styles.shop}> {/* Alterado para /products */} 
+            Shop
+          </Link>
+          <img className={styles.frameIcon} alt="" src="/FRAMESDESKTOP/Arrow.svg" />
         </div>
         <a href="#on-sale" className={styles.shop}>On Sale</a>
         <a href="#new-arrivals" className={styles.shop}>New Arrivals</a>

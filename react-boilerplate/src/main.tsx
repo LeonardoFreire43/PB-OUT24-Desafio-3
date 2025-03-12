@@ -1,14 +1,20 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import Home from './pages/Home'; // Certifique-se de que o caminho está correto
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Products from './pages/Products';
 import './pages/home/styles.css';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Home />
-    </BrowserRouter>
-  </StrictMode>,
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>
+    </Router>
+  </StrictMode>
 );
