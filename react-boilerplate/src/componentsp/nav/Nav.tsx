@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from 'react';
+import { Link } from 'react-router-dom';  // Importe o Link
 import styles from './Nav.module.css';
 import React from 'react';
 
@@ -25,17 +26,25 @@ const Nav: FunctionComponent = () => {
     setIsPopupVisible(!isPopupVisible);
   };
 
+  // Função para redirecionar para a seção de email e fechar o pop-up
+  const handleRedirectToEmail = () => {
+    window.location.href = '#email-section';
+    setIsPopupVisible(false);
+  };
+
   return (
     <div className={styles.shopcoParent}>
-      <b className={styles.shopco}>SHOP.CO</b>
+      <Link to="/" className={styles.shopco}>SHOP.CO</Link> {/* Redireciona para a homepage */}
       <div className={styles.frameParent}>
         <div className={styles.shopParent}>
-          <a href="#" className={styles.shop}>Shop</a>
-          <img className={styles.frameIcon} alt="" src="/FRAMESDESKTOP/Arrow-down.svg" />
+          <Link to="/products" className={styles.shop}> {/* Alterado para /products */} 
+            Shop
+          </Link>
+          <img className={styles.frameIcon} alt="" src="/FRAMESDESKTOP/Arrow.svg" />
         </div>
-        <a href="#on-sale" className={styles.shop}>On Sale</a>
+        <a href="#top-selling" className={styles.shop}>On Sale</a>
         <a href="#new-arrivals" className={styles.shop}>New Arrivals</a>
-        <a href="#brands" className={styles.shop}>Brands</a>
+        <a href="#browse-by-dress" className={styles.shop}>Brands</a>
       </div>
 
       {/* Barra de pesquisa funcional */}
@@ -84,18 +93,12 @@ const Nav: FunctionComponent = () => {
             <span className={styles.closeBtn} onClick={togglePopup}>&times;</span>
             <h2>Please login</h2>
             <button 
-              onClick={() => {
-                // Lógica para redirecionar para a página de registro (ainda não implementada)
-                console.log("Register");
-              }}
+              onClick={handleRedirectToEmail}
             >
                 Create a new account
             </button>
             <button 
-              onClick={() => {
-                // Lógica para redirecionar para a página de login (ainda não implementada)
-                console.log("Login");
-              }}
+              onClick={handleRedirectToEmail}
             >
                 I already have an account     
             </button>

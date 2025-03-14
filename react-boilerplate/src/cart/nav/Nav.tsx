@@ -1,11 +1,12 @@
 import { FunctionComponent, useState } from 'react';
-import { Link } from 'react-router-dom';  // Importe o Link
+import { Link, useNavigate } from 'react-router-dom';  // Importe o Link e useNavigate
 import styles from './Nav.module.css';
 import React from 'react';
 
 const Nav: FunctionComponent = () => {
   const [search, setSearch] = useState('');
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const navigate = useNavigate(); // Adicione o hook useNavigate
 
   // Função de pesquisa
   const handleSearch = () => {
@@ -28,7 +29,7 @@ const Nav: FunctionComponent = () => {
 
   // Função para redirecionar para a seção de email e fechar o pop-up
   const handleRedirectToEmail = () => {
-    window.location.href = '#email-section';
+    window.location.href = '#email-section'; // Use âncora para redirecionar para a seção de email
     setIsPopupVisible(false);
   };
 
@@ -72,7 +73,7 @@ const Nav: FunctionComponent = () => {
           className={styles.frameIcon1} 
           alt="Carrinho de Compras" 
           src="/FRAMESDESKTOP/ShoppingCart-Desktop.svg" 
-          onClick={() => window.location.href = '#shopping-section'} 
+          onClick={() => navigate('/cart')} // Use navigate para redirecionar
           style={{ cursor: 'pointer' }} 
         />
 

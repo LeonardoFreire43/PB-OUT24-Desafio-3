@@ -1,48 +1,31 @@
 import { FunctionComponent, useState, useEffect } from "react";
 import styles from "./OneLife.module.css";
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const OneLife: FunctionComponent = () => {
-  const [selectedColor, setSelectedColor] = useState<string>("brown");
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null); // Estado para a imagem clicada
-
-  // Lista de cores e suas identificações
-  const colors = [
-    {
-      id: "brown",
-      color: "#4f4631",
-      images: [
-        "/FRAMESDESKTOP/One-life.svg",
-        "/FRAMESDESKTOP/One-life2.svg",
-        "/FRAMESDESKTOP/One-life3.svg",
-      ],
-    },
-    {
-      id: "green",
-      color: "#314f4a",
-      images: [
-        "/FRAMESDESKTOP/teste1.jpg",
-        "/FRAMESDESKTOP/teste2.jpg",
-        "/FRAMESDESKTOP/teste3.webp",
-        "/FRAMESDESKTOP/teste4.jpg",
-      ],
-    },
-    { id: "blue", color: "#31344f", images: [] },
-  ];
-
-  const selectedImages = colors.find((item) => item.id === selectedColor)?.images || [];
+  const location = useLocation();
+  const [selectedImage, setSelectedImage] = useState<string>("/FRAMESDESKTOP/One-life.svg");
+  const [productName, setProductName] = useState<string>("One Life Graphic T-shirt");
+  const [productPrice, setProductPrice] = useState<number>(260);
+  const [productDiscountPrice, setProductDiscountPrice] = useState<number>(300);
+  const [productDiscount, setProductDiscount] = useState<number>(40);
 
   useEffect(() => {
-    // Aqui você pode realizar outras ações, se necessário, quando a cor for carregada
-  }, [selectedColor]);
-
-  const handleImageClick = (index: number) => {
-    setSelectedImageIndex(index); // Altera o índice da imagem selecionada
-  };
+    // Verifica se há dados passados pela navegação
+    if (location.state) {
+      const { imageSrc, name, price, discountPrice, discount } = location.state;
+      setSelectedImage(imageSrc);
+      setProductName(name);
+      setProductPrice(price);
+      setProductDiscountPrice(discountPrice);
+      setProductDiscount(discount);
+    }
+  }, [location.state]);
 
   return (
     <div>
-      <b className={styles.oneLifeGraphic}>One Life Graphic T-shirt</b>
+      <b className={styles.oneLifeGraphic}>{productName}</b>
       <div className={styles.Stars}>
         <div className={styles.starParent}>
           <img className={styles.frameChild} alt="" src="/FRAMESDESKTOP/Star 1-desktop.svg" />
@@ -57,67 +40,23 @@ const OneLife: FunctionComponent = () => {
         </div>
       </div>
       <div className={styles.parent}>
-        <b className={styles.b}>$260</b>
-        <b className={styles.b1}>$300</b>
+        <b className={styles.b}>${productPrice}</b>
+        <b className={styles.b1}>${productDiscountPrice}</b>
       </div>
       <div className={styles.parent1}>
-        <div className={styles.price}>-40%</div>
+        <div className={styles.price}>-{productDiscount}%</div>
       </div>
       <div className={styles.thisGraphicTShirt}>
         This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
       </div>
-      <div className={styles.selectColors}>Select Colors</div>
-      <div className={styles.groupParent2}>
-        {/* Bolinhas de cores */}
-        {colors.map((item) => (
-          <div
-            key={item.id}
-            className={styles.colorCircle}
-            style={{ backgroundColor: item.color }}
-            onClick={() => setSelectedColor(item.id)}
-          >
-            {/* Mostra a seta dentro da bolinha selecionada */}
-            {selectedColor === item.id && (
-              <img className={styles.selectedIcon} src="/FRAMESDESKTOP/Color select.svg" alt="Selected" />
-            )}
-          </div>
-        ))}
-      </div>
-
+      <div className={styles.selectColors}>No other colors available</div>
       <div>
-        {/* Mostrar imagens baseadas na cor selecionada */}
-        {selectedImages.length > 0 && selectedImages[0] && (
-          <img
-            className={`${styles.imageIcon} ${styles.image1Icon} ${selectedImageIndex === 0 ? styles.imageIconLarge : ""}`}
-            alt="Selected image 1"
-            src={selectedImages[0]}
-            onClick={() => handleImageClick(0)}
-          />
-        )}
-        {selectedImages.length > 1 && selectedImages[1] && (
-          <img
-            className={`${styles.imageIcon} ${styles.image2Icon} ${selectedImageIndex === 1 ? styles.imageIconLarge : ""}`}
-            alt="Selected image 2"
-            src={selectedImages[1]}
-            onClick={() => handleImageClick(1)}
-          />
-        )}
-        {selectedImages.length > 2 && selectedImages[2] && (
-          <img
-            className={`${styles.imageIcon} ${styles.image5Icon} ${selectedImageIndex === 2 ? styles.imageIconLarge : ""}`}
-            alt="Selected image 3"
-            src={selectedImages[2]}
-            onClick={() => handleImageClick(2)}
-          />
-        )}
-        {selectedImages.length > 3 && selectedImages[3] && (
-          <img
-            className={`${styles.imageIcon} ${styles.image6Icon} ${selectedImageIndex === 3 ? styles.imageIconLarge : ""}`}
-            alt="Selected image 4"
-            src={selectedImages[3]}
-            onClick={() => handleImageClick(3)}
-          />
-        )}
+        {/* Mostrar imagem baseada na cor selecionada */}
+        <img
+          className={styles.imageIcon}
+          alt="Selected image"
+          src={selectedImage}
+        />
       </div>
     </div>
   );

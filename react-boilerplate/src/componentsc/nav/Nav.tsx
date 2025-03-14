@@ -26,9 +26,15 @@ const Nav: FunctionComponent = () => {
     setIsPopupVisible(!isPopupVisible);
   };
 
+  // Função para redirecionar para a seção de email e fechar o pop-up
+  const handleRedirectToEmail = () => {
+    window.location.href = '#email-section';
+    setIsPopupVisible(false);
+  };
+
   return (
     <div className={styles.shopcoParent}>
-      <b className={styles.shopco}>SHOP.CO</b>
+      <Link to="/" className={styles.shopco}>SHOP.CO</Link> {/* Redireciona para a homepage */}
       <div className={styles.frameParent}>
         <div className={styles.shopParent}>
           <Link to="/products" className={styles.shop}> {/* Alterado para /products */} 
@@ -87,18 +93,12 @@ const Nav: FunctionComponent = () => {
             <span className={styles.closeBtn} onClick={togglePopup}>&times;</span>
             <h2>Please login</h2>
             <button 
-              onClick={() => {
-                // Lógica para redirecionar para a página de registro (ainda não implementada)
-                console.log("Register");
-              }}
+              onClick={handleRedirectToEmail}
             >
                 Create a new account
             </button>
             <button 
-              onClick={() => {
-                // Lógica para redirecionar para a página de login (ainda não implementada)
-                console.log("Login");
-              }}
+              onClick={handleRedirectToEmail}
             >
                 I already have an account     
             </button>

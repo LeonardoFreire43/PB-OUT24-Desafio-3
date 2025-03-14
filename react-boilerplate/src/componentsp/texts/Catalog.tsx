@@ -323,7 +323,7 @@ const Catalog: FunctionComponent = () => {
       {activeSection === 'productDetails' && (
         <div className={styles.content1}>
         <div className={styles.productCard}>
-          <h2>Product Description: One Life Graphic T-shirt</h2>
+          <h2>Product Description: All-Clothes</h2>
           <table className={styles.productTable}>
             <tbody>
               <tr>

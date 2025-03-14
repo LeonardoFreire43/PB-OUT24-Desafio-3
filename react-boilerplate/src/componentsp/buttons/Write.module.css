@@ -107,4 +107,56 @@
     background: #f0f0f0;
 }
 
+.frameIcon {
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
   
+.frameIcon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+  
+.optionsPanel {
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.option {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.option:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+  
+.latestParent {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.latestParent:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+  
+.writeAReviewWrapper {
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.writeAReviewWrapper:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}

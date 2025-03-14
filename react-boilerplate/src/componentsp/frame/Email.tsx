@@ -2,7 +2,7 @@ import { FunctionComponent, useState } from 'react';
 import styles from './Email.module.css';
 import React from 'react';
 
-const Frame: FunctionComponent = () => {
+const Email: FunctionComponent = () => {
   const [email, setEmail] = useState('');
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState('');
@@ -33,7 +33,7 @@ const Frame: FunctionComponent = () => {
   };
 
   return (
-    <div className={styles.stayUptoDateAboutOurLatesParent}>
+    <div id="email-section" className={styles.stayUptoDateAboutOurLatesParent}> {/* Adicione o id aqui */}
       <b className={styles.stayUptoDate}>STAY UPTO DATE ABOUT OUR LATEST OFFERS</b>
       <div className={styles.frameParent}>
         <div className={styles.frameGroup}>
@@ -68,4 +68,4 @@ const Frame: FunctionComponent = () => {
   );
 };
 
-export default Frame;
+export default Email;

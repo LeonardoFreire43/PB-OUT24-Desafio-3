@@ -4,7 +4,6 @@ import styles from './Section.module.css';
 import React from 'react';
 
 const Section: FunctionComponent = () => {
-  const { category } = useParams<{ category: string }>(); // Obtenha a categoria da URL
 
   return (
     <div className={styles.frameParent}>
@@ -14,7 +13,7 @@ const Section: FunctionComponent = () => {
         </Link>
         <img className={styles.frameIcon} alt="" src="/FRAMESDESKTOP/Arrow.svg" />
       </div>
-      <div className={styles.categoryName}>{category}</div> {/* Exiba a categoria */}
+      <div className={styles.categoryName}>Cart</div> 
     </div>
   );
 };

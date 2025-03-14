@@ -1,13 +1,16 @@
-import { useState } from 'react';
+import { FunctionComponent, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './ChooseSize.module.css';
 import React from 'react';
 
-const Choose = () => {
-  const [selectedSize, setSelectedSize] = useState(null);
+const Choose: FunctionComponent = () => {
+  const location = useLocation();
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [showPopup, setShowPopup] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSizeClick = (size) => {
+  const handleSizeClick = (size: string) => {
     setSelectedSize(size);
   };
 
@@ -20,11 +23,36 @@ const Choose = () => {
   };
 
   const handleAddToCart = () => {
-    setShowPopup(true); // Exibe o pop-up
+    const { name, price, discountPrice, discount } = location.state || {};
+
+    if (!name || !price || !discountPrice || !discount) {
+      console.error('Missing product data');
+      return;
+    }
+
+    const item = {
+      name,
+      size: selectedSize,
+      quantity,
+      price,
+      discountPrice,
+      discount,
+      color: 'Predefined Color', // Cor predefinida
+    };
+
+    const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+    cartItems.push(item);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+      navigate('/cart');
+    }, 1000);
   };
 
   const closePopup = () => {
-    setShowPopup(false); // Fecha o pop-up
+    setShowPopup(false);
   };
 
   return (
@@ -33,7 +61,7 @@ const Choose = () => {
         {['Small', 'Medium', 'Large', 'X-Large'].map(size => (
           <button
             key={size}
-            className={`${styles.sizeButton} ${selectedSize === size ? styles.selected : ''}`}
+            className={`${styles.sizeButton} ${size === 'Small' ? styles.sizeButtonSmall : ''} ${selectedSize === size ? styles.selected : ''}`}
             onClick={() => handleSizeClick(size)}
             style={{
               backgroundColor: selectedSize === size ? '#000' : '#f0f0f0',
@@ -63,9 +91,6 @@ const Choose = () => {
       {showPopup && (
         <div className={styles.popupOverlay}>
           <div className={styles.popupContainer}>
-            <button className={styles.popupCloseBtn} onClick={closePopup}>
-              X
-            </button>
             <div className={styles.popupMessage}>
               Item added to cart!
             </div>

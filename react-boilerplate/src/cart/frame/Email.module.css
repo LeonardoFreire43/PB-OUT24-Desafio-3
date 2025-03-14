@@ -66,7 +66,7 @@
     background-color: #000;
     overflow: hidden;
     display: flex;
-    top: 1900px;
+    top: 900px;
     left: calc(50% - 750px);
     flex-direction: row;
     align-items: center;
@@ -131,6 +131,5 @@
 .subscribeToNewsletterWrapper:hover {
     background-color: #f0f0f0;
 }
-
 
   

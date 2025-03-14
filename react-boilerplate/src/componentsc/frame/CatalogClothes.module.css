@@ -217,3 +217,11 @@
     color: #000;
   }
 
+.categoryTitle {
+  display: flex;
+  position: absolute;
+  top: 190px;
+  left: calc(50% - 300px);
+}
+
+

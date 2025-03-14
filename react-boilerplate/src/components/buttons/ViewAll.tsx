@@ -1,10 +1,13 @@
 import { FunctionComponent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './ViewAll.module.css';
 import React from 'react';
 
 const ViewAll: FunctionComponent = () => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    alert('Redirecting to all clothes...');
+    navigate('/category/All-Clothes');
   };
 
   return (

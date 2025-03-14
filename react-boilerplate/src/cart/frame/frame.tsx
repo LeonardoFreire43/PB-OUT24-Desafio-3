@@ -1,5 +1,5 @@
 import { FunctionComponent, useState } from 'react';
-import styles from './Frame.module.css';
+import styles from './frame.module.css';
 import React from 'react';
 
 const Frame: FunctionComponent = () => {

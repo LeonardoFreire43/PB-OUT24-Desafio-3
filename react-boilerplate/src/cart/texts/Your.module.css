@@ -1,0 +1,12 @@
+.yourCart {
+    width: 259px;
+    position: absolute;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Integral CF';
+    color: #000;
+    top: 210px;
+    left: calc(50% - 645px);
+    text-align: left;
+}
+

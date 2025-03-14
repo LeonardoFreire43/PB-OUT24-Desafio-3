@@ -95,7 +95,7 @@
 .buttonParent {
     position: absolute;
     width: 100%;
-    top: 1700px;
+    top: 1720px;
     display: flex;
     left: calc(50% - 800px);
     flex-direction: row;

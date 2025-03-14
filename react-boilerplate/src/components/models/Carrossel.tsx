@@ -58,7 +58,7 @@ const Carrossel: React.FC = () => {
 
   return (
     <div className={styles.sliderContainer}>
-      <Slider {...settings}>
+      <Slider {...settings} ref={sliderRef}>
         <div>
           <div className={styles.frameParent}>
             <div className={styles.frameWrapper}>
@@ -83,7 +83,6 @@ const Carrossel: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* Outros slides */}
         <div>
           <div className={styles.frameParent}>
             <div className={styles.frameWrapper}>
@@ -101,7 +100,7 @@ const Carrossel: React.FC = () => {
                     <img className={styles.frameIcon} alt="Frame" src="/FRAMESDESKTOP/Verified-desktop.svg" />
                   </div>
                   <div className={styles.imBlownAway}>
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                    "I’m beyond impressed with the quality of the products and the fast shipping. Every order has exceeded my expectations!"
                   </div>
                 </div>
               </div>
@@ -125,7 +124,7 @@ const Carrossel: React.FC = () => {
                     <img className={styles.frameIcon} alt="Frame" src="/FRAMESDESKTOP/Verified-desktop.svg" />
                   </div>
                   <div className={styles.imBlownAway}>
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                    "Excellent customer service and a seamless checkout process. I’ll definitely be shopping here again!"
                   </div>
                 </div>
               </div>
@@ -149,7 +148,7 @@ const Carrossel: React.FC = () => {
                     <img className={styles.frameIcon} alt="Frame" src="/FRAMESDESKTOP/Verified-desktop.svg" />
                   </div>
                   <div className={styles.imBlownAway}>
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                    "The variety of products is amazing! Everything I’ve purchased has been top-notch in quality and style."
                   </div>
                 </div>
               </div>
@@ -173,7 +172,7 @@ const Carrossel: React.FC = () => {
                     <img className={styles.frameIcon} alt="Frame" src="/FRAMESDESKTOP/Verified-desktop.svg" />
                   </div>
                   <div className={styles.imBlownAway}>
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                    "Fast delivery, great prices, and outstanding quality. I couldn’t be happier with my shopping experience!"
                   </div>
                 </div>
               </div>
@@ -197,7 +196,7 @@ const Carrossel: React.FC = () => {
                     <img className={styles.frameIcon} alt="Frame" src="/FRAMESDESKTOP/Verified-desktop.svg" />
                   </div>
                   <div className={styles.imBlownAway}>
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                    "From start to finish, everything was perfect. The website is well-designed, and the entire process was smooth and hassle-free."
                   </div>
                 </div>
               </div>
@@ -221,7 +220,7 @@ const Carrossel: React.FC = () => {
                     <img className={styles.frameIcon} alt="Frame" src="/FRAMESDESKTOP/Verified-desktop.svg" />
                   </div>
                   <div className={styles.imBlownAway}>
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                    "This has become my go-to online store! Reliable, efficient, and full of high-quality products. Highly recommend!"
                   </div>
                 </div>
               </div>

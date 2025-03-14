@@ -1,22 +1,29 @@
 import { FunctionComponent } from 'react';
 import styles from './Clothes2.module.css';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Clothes2: FunctionComponent = () => {
+const navigate = useNavigate();
+  
+const handleNavigation = (category: string) => {
+  navigate(`/category/${category}`);
+
+  };
   return (
     
     <div>
       <div>
-      <a href="#" onClick={() => console.log("Imagem 5 clicada")}>
+      <a href="#" onClick={() => handleNavigation('All-Clothes')}>
           <img className={styles.image7Icon} alt="" src="/FRAMESDESKTOP/Vertical- Striped-Shirt-desktop.svg" />
         </a>
-        <a href="#" onClick={() => console.log("Imagem 6 clicada")}>
+        <a href="#" onClick={() => handleNavigation('All-Clothes')}>
           <img className={styles.image8Icon} alt="" src="/FRAMESDESKTOP/Courage-Graphic-T-shirt-desktop.svg" />
         </a>
-        <a href="#" onClick={() => console.log("Imagem 7 clicada")}>
+        <a href="#" onClick={() => handleNavigation('All-Clothes')}>
           <img className={styles.image9Icon} alt="" src="/FRAMESDESKTOP/Loose-Fit-Bermuda-desktop.svg" />
         </a>
-        <a href="#" onClick={() => console.log("Imagem 8 clicada")}>
+        <a href="#" onClick={() => handleNavigation('All-Clothes')}>
           <img className={styles.image10Icon} alt="" src="/FRAMESDESKTOP/Faded-Skinny-Jeans-desktop.svg" />
         </a>
       </div>

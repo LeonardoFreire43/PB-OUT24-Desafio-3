@@ -4,27 +4,26 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Clothes: FunctionComponent = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const handleImageClick = (imageId: string) => {
-    console.log(`Imagem ${imageId} clicada`);
-    navigate('/category');
-};
+  const handleImageClick = (category: string) => {
+    navigate(`/category/${category}`);
+  };
+
   return (
-    
     <div>
       <div>
-      <a href="#" onClick={() => handleImageClick("1")}>
-          <img className={styles.image7Icon} alt="" src="/FRAMESDESKTOP/T-shirt-with Tape-Details-desktop.svg" />
+        <a href="#" onClick={() => handleImageClick("All-Clothes")}>
+          <img className={styles.image7Icon} alt="T-shirt with Tape Details" src="/FRAMESDESKTOP/T-shirt-with Tape-Details-desktop.svg" />
         </a>
-        <a href="#" onClick={() => handleImageClick("2")}>
-          <img className={styles.image8Icon} alt="" src="/FRAMESDESKTOP/image 8.svg" />
+        <a href="#" onClick={() => handleImageClick("All-Clothes")}>
+          <img className={styles.image8Icon} alt="Image 8" src="/FRAMESDESKTOP/image 8.svg" />
         </a>
-        <a href="#" onClick={() => handleImageClick("3")}>
-          <img className={styles.image9Icon} alt="" src="/FRAMESDESKTOP/Checkered Shirt-Desktop.svg" />
+        <a href="#" onClick={() => handleImageClick("All-Clothes")}>
+          <img className={styles.image9Icon} alt="Checkered Shirt" src="/FRAMESDESKTOP/Checkered Shirt-Desktop.svg" />
         </a>
-        <a href="#" onClick={() => handleImageClick("4")}>
-        <img className={styles.image10Icon} alt="" src="/FRAMESDESKTOP/Sleeve-Striped T-shirt-desktop.svg" />
+        <a href="#" onClick={() => handleImageClick("All-Clothes")}>
+          <img className={styles.image10Icon} alt="Sleeve Striped T-shirt" src="/FRAMESDESKTOP/Sleeve-Striped T-shirt-desktop.svg" />
         </a>
       </div>
       <div className={styles.frameParent1}>
