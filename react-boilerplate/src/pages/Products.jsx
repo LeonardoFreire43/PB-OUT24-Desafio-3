@@ -10,7 +10,7 @@ import Choose from '../componentsp/buttons/ChooseSize'
 import Div from '../componentsp/frame/Div'
 import Catolog from '../componentsp/texts/Catalog'
 import Write from '../componentsp/buttons/Write'
-
+import YouMight from '../componentsp/models/YouMight'; 
 
 function Products() {
     return (
@@ -26,7 +26,7 @@ function Products() {
             <Div />
             <Catolog />
             <Write />
-
+            <YouMight />
         </div>
     );
 }

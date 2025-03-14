@@ -36,9 +36,9 @@ const Nav: FunctionComponent = () => {
           </Link>
           <img className={styles.frameIcon} alt="" src="/FRAMESDESKTOP/Arrow.svg" />
         </div>
-        <a href="#on-sale" className={styles.shop}>On Sale</a>
+        <a href="#top-selling" className={styles.shop}>On Sale</a>
         <a href="#new-arrivals" className={styles.shop}>New Arrivals</a>
-        <a href="#brands" className={styles.shop}>Brands</a>
+        <a href="#browse-by-dress" className={styles.shop}>Brands</a>
       </div>
 
       {/* Barra de pesquisa funcional */}

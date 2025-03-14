@@ -6,11 +6,11 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    top: -5px;
+    z-index: 10;
 }
 
 .shopNow:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(32, 31, 31, 0.731);
     transform: scale(1.05);
 }
 

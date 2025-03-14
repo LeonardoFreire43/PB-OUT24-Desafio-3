@@ -1,0 +1,110 @@
+.arrowLeftIcon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.text {
+    position: relative;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.buttonBase {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.buttonBase:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+.button {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.paginationNumberBase {
+    width: 40px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.06);
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+.paginationNumberBase:hover {
+    background-color: #e0e0e0;
+    color: #007bff;
+}
+.paginationNumberBase1 {
+    width: 40px;
+    position: relative;
+    border-radius: 5px;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+.paginationNumberBase1:hover {
+    background-color: #e0e0e0;
+    color: #007bff;
+}
+.paginationNumbers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.buttonParent {
+    position: absolute;
+    width: 100%;
+    top: 1700px;
+    display: flex;
+    left: calc(50% - 800px);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: Satoshi;
+}
+

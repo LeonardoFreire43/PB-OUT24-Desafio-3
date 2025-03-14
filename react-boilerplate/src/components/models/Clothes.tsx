@@ -1,23 +1,30 @@
 import { FunctionComponent } from 'react';
 import styles from './Clothes.module.css';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Clothes: FunctionComponent = () => {
+const navigate = useNavigate();
+
+const handleImageClick = (imageId: string) => {
+    console.log(`Imagem ${imageId} clicada`);
+    navigate('/category');
+};
   return (
     
     <div>
       <div>
-      <a href="#" onClick={() => console.log("Imagem 1 clicada")}>
+      <a href="#" onClick={() => handleImageClick("1")}>
           <img className={styles.image7Icon} alt="" src="/FRAMESDESKTOP/T-shirt-with Tape-Details-desktop.svg" />
         </a>
-        <a href="#" onClick={() => console.log("Imagem 2 clicada")}>
+        <a href="#" onClick={() => handleImageClick("2")}>
           <img className={styles.image8Icon} alt="" src="/FRAMESDESKTOP/image 8.svg" />
         </a>
-        <a href="#" onClick={() => console.log("Imagem 3 clicada")}>
+        <a href="#" onClick={() => handleImageClick("3")}>
           <img className={styles.image9Icon} alt="" src="/FRAMESDESKTOP/Checkered Shirt-Desktop.svg" />
         </a>
-        <a href="#" onClick={() => console.log("Imagem 4 clicada")}>
-          <img className={styles.image10Icon} alt="" src="/FRAMESDESKTOP/Sleeve-Striped T-shirt-desktop.svg" />
+        <a href="#" onClick={() => handleImageClick("4")}>
+        <img className={styles.image10Icon} alt="" src="/FRAMESDESKTOP/Sleeve-Striped T-shirt-desktop.svg" />
         </a>
       </div>
       <div className={styles.frameParent1}>
@@ -83,4 +90,3 @@ const Clothes: FunctionComponent = () => {
 };
 
 export default Clothes;
-

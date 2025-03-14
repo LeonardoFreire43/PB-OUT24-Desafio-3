@@ -1,0 +1,59 @@
+.home {
+    position: relative;
+    text-decoration: none;
+    border-bottom: none;
+    color: #6f7174;
+    transition: color 0.3s ease; 
+}
+
+.frameIcon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: filter 0.3s ease; /* Transição suave para o ícone */
+}
+
+.homeParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    transition: #6f7174; /* Transição suave na cor */
+}
+
+.Casual {
+    position: relative;
+    font-size: 16px;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+  
+.frameParent {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 150px;
+    left: calc(50% - 640px);
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Satoshi;
+}
+
+.homeParent:hover, .home:hover{
+    color: #000000; /* Cor de destaque ao passar o mouse */
+}
+
+.tShirts:hover {
+    color: #6f7174;
+}
+

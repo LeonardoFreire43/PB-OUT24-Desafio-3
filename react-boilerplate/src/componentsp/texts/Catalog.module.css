@@ -382,3 +382,254 @@
 .panel div:hover {
   background-color: #f0f0f0;
 }
+.FaqsAll {
+  width: 35%;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  top: 1280px;
+  left: calc(50% - 680px);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 28px 32px;
+  gap: 24px 342px;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Satoshi;
+}
+
+.FaqsAll1 {
+  width: 35%;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  top: 1280px;
+  left: calc(50% - -180px);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 28px 32px;
+  gap: 24px 342px;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Satoshi;
+}
+
+.FaqsAll2 {
+  width: 35%;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  top: 1650px;
+  left: calc(50% - -180px);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 28px 32px;
+  gap: 24px 342px;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Satoshi;
+}
+
+.FaqsAll3 {
+  width: 35%;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  top: 1650px;
+  left: calc(50% - 680px);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 28px 32px;
+  gap: 24px 342px;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Satoshi;
+}
+
+/* Estilização geral */
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-left: calc(50% - 1600px);
+  padding-top: 800px;
+}
+
+
+.Product {
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.Product h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+
+.Product p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+
+.Product ul {
+  padding-left: 20px;
+}
+
+.Product li {
+  margin-bottom: 6px;
+}
+
+
+.size-chart {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+.size-chart th, .size-chart td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.size-chart th {
+  background-color: #007bff;
+  color: white;
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.productTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.productTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.productTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.productTable th {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
+.sizeChart {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.sizeChart th, .sizeChart td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.sizeChart th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sizeChart tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sizeChart tr:hover {
+  background-color: #f1f1f1;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.loadMoreReviews {
+  position: relative;
+  font-weight: 500;
+}
+.loadMoreReviewsParent {
+  width: 15%;
+  position: absolute;
+  border-radius: 62px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: 52px;
+  overflow: hidden;
+  display: flex;
+  top: 2400px;
+  left: calc(50% - 100px);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 54px;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Satoshi;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
+}
+
+.loadMoreReviewsParent:hover {
+  background-color: #b4b4b4; 
+  color: #000000; 
+  cursor: pointer; 
+}
+
+
+
+
+

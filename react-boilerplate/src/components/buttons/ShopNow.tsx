@@ -1,10 +1,13 @@
 import { FunctionComponent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './ShopNow.module.css';
 import React from 'react';
 
 const ShopNow: FunctionComponent = () => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    alert('Redirecting to shop...');
+    navigate('/products'); // Redireciona para a página de produtos
   };
 
   return (

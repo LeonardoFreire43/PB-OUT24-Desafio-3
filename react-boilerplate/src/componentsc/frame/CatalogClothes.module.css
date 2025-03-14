@@ -1,0 +1,219 @@
+.catalogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 145px;
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 300px);
+  }
+  
+.image8Icon {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image8Icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.catalogText {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.casual {
+    width: 101px;
+    position: absolute;
+    top: -10px;
+    font-size: 32px;
+    left: calc(50% - 860px);
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.showing110Of {
+    position: relative;
+}
+.mostPopular {
+    font-weight: 500;
+    color: #000;
+}
+.frameIcon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.sortByMostPopularParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.showing110Of100ProductsParent {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    top: 200px;
+    text-align: left;
+    left: calc(50% - -280px);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Satoshi;
+}
+.frameChild {
+    width: 18.5px;
+    position: relative;
+    height: 18.5px;
+}
+.starParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5.3px;
+}
+.span {
+    color: rgba(0, 0, 0, 0.6);
+}
+.div {
+    position: relative;
+}
+.frameParent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: Satoshi;
+}
+
+.b {
+    width: 56px;
+    position: absolute;
+    font-size: 24px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+}
+
+.b {
+    position: absolute;
+    top: 20px;
+}
+.b1 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30px);
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.4);
+}
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper {
+    width: 58px;
+    border-radius: 62px;
+    background-color: rgba(255, 51, 51, 0.1);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    position: absolute;
+    top: 3px;
+    left: calc(50% - -30px);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #ff3333;
+}
+.parent {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: Satoshi;
+}
+
+.buttonParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15%;
+    margin-top: 1750px;
+  }
+  
+  .button {
+    cursor: pointer;
+    width: 5%;
+  }
+  
+  .buttonBase {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .paginationNumbers {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .paginationNumberBase {
+    cursor: pointer;
+  }
+  
+  .paginationNumberBase1 {
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .text {
+    font-size: 14px;
+    color: #000;
+  }
+

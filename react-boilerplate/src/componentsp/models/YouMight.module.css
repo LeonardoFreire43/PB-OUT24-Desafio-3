@@ -1,0 +1,343 @@
+.image8Icon, .image7Icon, .image9Icon, .image10Icon {
+    width: 400px;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    object-fit: cover;
+    top: 2700px;
+}
+
+.image7Icon {
+    width: 320px;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    left: calc(50% - 650px);
+    object-fit: cover;
+}
+
+.image10Icon {
+    width: 320px;
+    position: absolute;
+    max-width: 100%;
+    right: calc(50% - 770px);
+    overflow: hidden;
+    height: 444px;
+    object-fit: cover;
+
+}
+
+.image8Icon {
+    width: 320px;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    right: calc(50% - 40px);
+    object-fit: cover;
+}
+
+.image9Icon {
+    width: 320px;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    height: 444px;
+    left: calc(50% - -90px);
+    object-fit: cover;
+}
+
+.image7Icon,
+.image8Icon,
+.image9Icon,
+.image10Icon {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.image7Icon:hover,
+.image8Icon:hover,
+.image9Icon:hover,
+.image10Icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3)
+}
+
+.youMightAlso {
+    width: 579px;
+    position: absolute;
+    font-size: 48px;
+    display: inline-block;
+    font-family: 'Integral CF';
+    color: #000;
+    text-align: center;
+    left: calc(50% - 240px);
+    top: 2520px;
+}
+
+.frameChild {
+    width: 18.5px;
+    position: relative;
+    height: 18.5px;
+}
+.starParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5.3px;
+}
+.span {
+    color: rgba(0, 0, 0, 0.6);
+}
+.div {
+    position: relative;
+}
+
+.frameParent {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    top: 3200px;
+    left: calc(50% - 652px);
+    font-family: Satoshi;
+}
+
+.poloWithContrast {
+    width: 228px;
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    top: 3160px;
+    left: calc(50% - 650px);
+    text-align: left;
+}
+
+.gradientGraphicTShirt {
+    width: 227px;
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+    top: 3160px;
+    left: calc(50% - 275px);
+}
+
+.poloWithTipping {
+    width: 231px;
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    text-align: left;
+    top: 3160px;
+    left: calc(50% - -95px);
+}
+
+.blackStripedTShirt {
+    width: 190px;
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    top: 3160px;
+    right: calc(50% - 645px);
+    text-align: left;
+}
+
+.frameParent1 {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    top: 3200px;
+    left: calc(50% - 275px);
+    font-family: Satoshi;
+}
+.frameParent2 {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    top: 3200px;
+    left: calc(50% - -95px);
+    font-family: Satoshi;
+}
+.frameParent3 {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    top: 3200px;
+    right: calc(50% - 610px);
+    font-family: Satoshi;
+}
+
+.a {
+    width: 53px;
+    position: absolute;
+    font-size: 24px;
+    top: 3220px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    left: calc(50% - 652px);
+    text-align: left;
+}
+
+.a1 {
+    width: 58px;
+    position: absolute;
+    top: 3220px;
+    font-size: 24px;
+    left: calc(50% - 595px);
+    text-decoration: line-through;
+    display: inline-block;
+    font-family: Satoshi;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+.div {
+    position: relative;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    width: 3%;
+    position: absolute;
+    border-radius: 62px;
+    background-color: rgba(255, 51, 51, 0.1);
+    overflow: hidden;
+    display: flex;
+    top: 3225px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 12px;
+    color: #ff3333;
+    font-family: Satoshi;
+    left: calc(50% - 540px);
+}
+
+.parent1 {
+    display: flex;
+}
+
+.d {
+    position: relative;
+    }
+.d1 {
+    position: relative;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.4);
+}
+.div1 {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper1 {
+    width: 58px;
+    border-radius: 62px;
+    background-color: rgba(255, 51, 51, 0.1);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #ff3333;
+}
+.parent1 {
+    position: absolute;
+    width: auto;
+    top: 3225px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: Satoshi;
+    right: calc(50% - 630px);
+}
+    
+.b {
+    width: 54px;
+    position: absolute;
+    top: 3220px;
+    font-size: 24px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    left: calc(50% - 275px);
+    text-align: left;
+}
+
+.c {
+    width: 54px;
+    position: absolute;
+    font-size: 24px;
+    display: inline-block;
+    font-family: Satoshi;
+    color: #000;
+    top: 3220px;
+    text-align: left;
+    left: calc(50% - -95px);
+}
+
+
+
+
+
+
+
+
+
+
+
+

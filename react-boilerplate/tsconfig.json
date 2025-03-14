@@ -11,7 +11,7 @@
     "paths": {
       "*": ["node_modules/*"]
     },
-    "allowJs": true, // Permite compilar arquivos JavaScript
+    "allowJs": true, 
     "outDir": "./dist" // Diretório de saída para os arquivos compilados
   },
   "include": ["src"]
